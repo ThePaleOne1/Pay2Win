@@ -158,7 +158,6 @@
     <Compile Include="Assets\ImportedStuff\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
     <Compile Include="Assets\ImportedStuff\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
     <Compile Include="Assets\ImportedStuff\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
-    <Compile Include="Assets\PCinteract.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -171,8 +170,11 @@
     <Compile Include="Assets\Scripts\groundCheck.cs" />
     <Compile Include="Assets\Scripts\hand.cs" />
     <Compile Include="Assets\Scripts\Lever.cs" />
+    <Compile Include="Assets\Scripts\MoneyCount.cs" />
+    <Compile Include="Assets\Scripts\PCinteract.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PressurePlate.cs" />
+    <Compile Include="Assets\Scripts\PurchaseItem.cs" />
     <Compile Include="Assets\Scripts\Trigerable.cs" />
     <None Include="Assets\ImportedStuff\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\ImportedStuff\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
