@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D2840BAC-3D98-9B94-B290-9F352DFF65FB}</ProjectGuid>
+    <ProjectGuid>{0DCFF34F-3C6C-2647-244D-3F3EE852BF10}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,9 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\door.cs" />
-    <Compile Include="Assets\groundCheck.cs" />
-    <Compile Include="Assets\hand.cs" />
     <Compile Include="Assets\ImportedStuff\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
     <Compile Include="Assets\ImportedStuff\Standard Assets\2D\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\ImportedStuff\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
@@ -161,8 +158,7 @@
     <Compile Include="Assets\ImportedStuff\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
     <Compile Include="Assets\ImportedStuff\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
     <Compile Include="Assets\ImportedStuff\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
-    <Compile Include="Assets\Lever.cs" />
-    <Compile Include="Assets\PressurePlate.cs" />
+    <Compile Include="Assets\PCinteract.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -171,8 +167,13 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\door.cs" />
+    <Compile Include="Assets\Scripts\groundCheck.cs" />
+    <Compile Include="Assets\Scripts\hand.cs" />
+    <Compile Include="Assets\Scripts\Lever.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Trigerable.cs" />
+    <Compile Include="Assets\Scripts\PressurePlate.cs" />
+    <Compile Include="Assets\Scripts\Trigerable.cs" />
     <None Include="Assets\ImportedStuff\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\ImportedStuff\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
     <None Include="Assets\ImportedStuff\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
@@ -209,43 +210,43 @@
     <None Include="Assets\ImportedStuff\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay 2 Win/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay2Win/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay 2 Win/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay2Win/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay 2 Win/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay2Win/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay 2 Win/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay2Win/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay 2 Win/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay2Win/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay 2 Win/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay2Win/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay 2 Win/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay2Win/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay 2 Win/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay2Win/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay 2 Win/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay2Win/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay 2 Win/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay2Win/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay 2 Win/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay2Win/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay 2 Win/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay2Win/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay 2 Win/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/mindc/OneDrive/Documents/GitHub/Pay2Win/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
