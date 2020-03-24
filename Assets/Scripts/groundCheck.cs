@@ -6,17 +6,6 @@ public class groundCheck : MonoBehaviour
 {
     [SerializeField]
     PlayerController pc;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -26,6 +15,7 @@ public class groundCheck : MonoBehaviour
             pc.isGrounded = true;
         }
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         //ground detect
