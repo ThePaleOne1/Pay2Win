@@ -39,6 +39,7 @@ public class PurchaseItem : MonoBehaviour
         if (mc.moneyCount >= cost) 
         {
             mc.moneyCount -= cost;
+            mc.moneySpent += cost;
             Instantiate(itemPrefab, player.transform.position + new Vector3(Random.Range(-1, 1), Random.Range(0, 1), 0), player.transform.rotation);
         }
     }
