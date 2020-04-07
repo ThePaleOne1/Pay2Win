@@ -9,6 +9,7 @@ public class MoneyCount : MonoBehaviour
 
     [SerializeField]
     Text moneyText;
+    public float moneySpent = 0;
 
     // Update is called once per frame
     void Update()
