@@ -9,6 +9,7 @@ public class door : MonoBehaviour
 
     [SerializeField]
     bool Inverted = false;
+
     // Start is called before the first frame update
     void Start()
     {

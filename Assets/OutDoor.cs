@@ -14,6 +14,7 @@ public class OutDoor : MonoBehaviour
     private void Start()
     {
         tAnim = TransitionEffect.GetComponent<Animator>();
+        TransitionEffect.SetActive(true);
     }
 
     private void Update()
@@ -33,6 +34,7 @@ public class OutDoor : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E))
             {
+                
                 tAnim.SetTrigger("Transition");
             }
             hitObj = col.gameObject;
