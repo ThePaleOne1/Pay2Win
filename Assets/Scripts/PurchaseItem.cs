@@ -9,7 +9,6 @@ public class PurchaseItem : MonoBehaviour
     GameObject itemPrefab;
     [SerializeField]
     float cost = 1;
-    [SerializeField]
     GameObject player;
     MoneyCount mc;
     Text buttonText;
@@ -17,6 +16,7 @@ public class PurchaseItem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player");
         mc = player.GetComponent<MoneyCount>();
         buttonText = GetComponentInChildren<Text>();
     }
