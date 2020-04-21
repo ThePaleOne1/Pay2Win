@@ -328,7 +328,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Bank: $10'
+  m_Text: 'Bank: $'
 --- !u!114 &3370445322017189348
 MonoBehaviour:
   m_ObjectHideFlags: 0
