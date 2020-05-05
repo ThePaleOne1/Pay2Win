@@ -21,7 +21,7 @@ public class PCinteract : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                SceneManager.LoadScene("DesktopScene");
+                SceneManager.LoadScene("GameScene");
             }
         }
     }
