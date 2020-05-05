@@ -19,6 +19,7 @@ public class PressurePlate : MonoBehaviour
         anim.SetBool("IsSteppedOn", true);
         foreach (GameObject obj in triggerables)
         {
+
             obj.GetComponent<Trigerable>().IsTriggered = true;
         }
     }

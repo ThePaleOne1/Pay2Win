@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OutDoor : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class OutDoor : MonoBehaviour
     Animator tAnim;
     GameObject hitObj;
     bool isTriggered;
+
+    [SerializeField] bool IsRealityDoor;
     private void Start()
     {
         tAnim = TransitionEffect.GetComponent<Animator>();
@@ -21,6 +24,12 @@ public class OutDoor : MonoBehaviour
     {
         if (GlobalVariables.isScreenBlack && isTriggered)
         {
+
+            if (IsRealityDoor)
+            {
+                SceneManager.LoadScene("DesktopScene");
+            }
+
             hitObj.transform.position = nextLevelStart.transform.position;
         }
         
